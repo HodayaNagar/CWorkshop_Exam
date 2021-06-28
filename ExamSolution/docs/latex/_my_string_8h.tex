@@ -1,0 +1,237 @@
+\hypertarget{_my_string_8h}{}\doxysection{My\+String.\+h File Reference}
+\label{_my_string_8h}\index{MyString.h@{MyString.h}}
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_string__t}{String\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}}~int
+\item 
+\#define \mbox{\hyperlink{_my_string_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{TRUE}}~1
+\item 
+\#define \mbox{\hyperlink{_my_string_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_string__t}{String\+\_\+t}} \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$ \mbox{\hyperlink{_my_string_8h_a5cfc1221a25e3d1041bdb2862eb27cd6}{Create\+String}} (const char $\ast$source)
+\begin{DoxyCompactList}\small\item\em create a new String \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{_my_string_8h_a3d01240df64276efbf2ac595ece45986}{Delete\+String}} (\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em create a String that were dynamicly allocated in the heap \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{_my_string_8h_a20d32745a05117b679906dd98d8741e3}{Get\+String\+Length}} (const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em get length of String \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{_my_string_8h_ac8b9c4ac6175adcb1edac9f8b0d12e89}{Is\+Empty}} (const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em check if the String is empty (NULL) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} \mbox{\hyperlink{_my_string_8h_a71ea2f33f21d9a2ddd4194b319509b27}{Compare\+String}} (const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str1, const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$str2)
+\begin{DoxyCompactList}\small\item\em compare two Strings \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_string_8h_a89b9e7f061918d4034a5fff190a87028}{Copy\+String}} (\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$dst, const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$src)
+\begin{DoxyCompactList}\small\item\em copy from String to String \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_string_8h_ab874fb348e8b2f9acb1f96918ca5c9df}{Copy\+CString}} (\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$dst, const char $\ast$src)
+\begin{DoxyCompactList}\small\item\em copy from char $\ast$ to String \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_string_8h_a2e16056c6206823c6093a4f863a7cae2}{Append\+String}} (\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$dst, const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$src)
+\begin{DoxyCompactList}\small\item\em appent String at the end of destination String \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_string_8h_afcf30ce86331792c0ca19d5273fcb05b}{Append\+CString}} (\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$dst, const char $\ast$src)
+\begin{DoxyCompactList}\small\item\em appent char $\ast$ at the end of destination String \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}\label{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}} 
+\index{MyString.h@{MyString.h}!BOOL@{BOOL}}
+\index{BOOL@{BOOL}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{BOOL}{BOOL}}
+{\footnotesize\ttfamily \#define BOOL~int}
+
+\mbox{\Hypertarget{_my_string_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{_my_string_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
+\index{MyString.h@{MyString.h}!FALSE@{FALSE}}
+\index{FALSE@{FALSE}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{FALSE}{FALSE}}
+{\footnotesize\ttfamily \#define FALSE~0}
+
+\mbox{\Hypertarget{_my_string_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{_my_string_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\index{MyString.h@{MyString.h}!TRUE@{TRUE}}
+\index{TRUE@{TRUE}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{TRUE}{TRUE}}
+{\footnotesize\ttfamily \#define TRUE~1}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}\label{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}} 
+\index{MyString.h@{MyString.h}!String@{String}}
+\index{String@{String}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{String}{String}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_string__t}{String\+\_\+t}} \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}}}
+
+implementation of part of String class 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_my_string_8h_afcf30ce86331792c0ca19d5273fcb05b}\label{_my_string_8h_afcf30ce86331792c0ca19d5273fcb05b}} 
+\index{MyString.h@{MyString.h}!AppendCString@{AppendCString}}
+\index{AppendCString@{AppendCString}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{AppendCString()}{AppendCString()}}
+{\footnotesize\ttfamily void Append\+CString (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{dst,  }\item[{const char $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+appent char $\ast$ at the end of destination String 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & string to append in\\
+\hline
+{\em src} & String to copy from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_my_string_8h_a2e16056c6206823c6093a4f863a7cae2}\label{_my_string_8h_a2e16056c6206823c6093a4f863a7cae2}} 
+\index{MyString.h@{MyString.h}!AppendString@{AppendString}}
+\index{AppendString@{AppendString}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{AppendString()}{AppendString()}}
+{\footnotesize\ttfamily void Append\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{dst,  }\item[{const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+appent String at the end of destination String 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & string to append in\\
+\hline
+{\em src} & String to copy from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_my_string_8h_a71ea2f33f21d9a2ddd4194b319509b27}\label{_my_string_8h_a71ea2f33f21d9a2ddd4194b319509b27}} 
+\index{MyString.h@{MyString.h}!CompareString@{CompareString}}
+\index{CompareString@{CompareString}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{CompareString()}{CompareString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Compare\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str1,  }\item[{const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str2 }\end{DoxyParamCaption})}
+
+
+
+compare two Strings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str1} & first String to compare\\
+\hline
+{\em str2} & second String to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE (1) if the two Strings are the same, else return FALSE (0) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_my_string_8h_ab874fb348e8b2f9acb1f96918ca5c9df}\label{_my_string_8h_ab874fb348e8b2f9acb1f96918ca5c9df}} 
+\index{MyString.h@{MyString.h}!CopyCString@{CopyCString}}
+\index{CopyCString@{CopyCString}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{CopyCString()}{CopyCString()}}
+{\footnotesize\ttfamily void Copy\+CString (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{dst,  }\item[{const char $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+copy from char $\ast$ to String 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & string to copy to\\
+\hline
+{\em src} & String to copy from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_my_string_8h_a89b9e7f061918d4034a5fff190a87028}\label{_my_string_8h_a89b9e7f061918d4034a5fff190a87028}} 
+\index{MyString.h@{MyString.h}!CopyString@{CopyString}}
+\index{CopyString@{CopyString}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{CopyString()}{CopyString()}}
+{\footnotesize\ttfamily void Copy\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{dst,  }\item[{const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+copy from String to String 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & String to copy from\\
+\hline
+{\em src} & String to copy to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_my_string_8h_a5cfc1221a25e3d1041bdb2862eb27cd6}\label{_my_string_8h_a5cfc1221a25e3d1041bdb2862eb27cd6}} 
+\index{MyString.h@{MyString.h}!CreateString@{CreateString}}
+\index{CreateString@{CreateString}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{CreateString()}{CreateString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}}$\ast$ Create\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{source }\end{DoxyParamCaption})}
+
+
+
+create a new String 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & string to initialize the new String with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new String initialized 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_my_string_8h_a3d01240df64276efbf2ac595ece45986}\label{_my_string_8h_a3d01240df64276efbf2ac595ece45986}} 
+\index{MyString.h@{MyString.h}!DeleteString@{DeleteString}}
+\index{DeleteString@{DeleteString}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{DeleteString()}{DeleteString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Delete\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+create a String that were dynamicly allocated in the heap 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to delete from the heap (free)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE (1) if the String needed to be deleted and it succedded, else return FALSE (0) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_my_string_8h_a20d32745a05117b679906dd98d8741e3}\label{_my_string_8h_a20d32745a05117b679906dd98d8741e3}} 
+\index{MyString.h@{MyString.h}!GetStringLength@{GetStringLength}}
+\index{GetStringLength@{GetStringLength}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{GetStringLength()}{GetStringLength()}}
+{\footnotesize\ttfamily size\+\_\+t Get\+String\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+get length of String 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to check its length\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of String 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_my_string_8h_ac8b9c4ac6175adcb1edac9f8b0d12e89}\label{_my_string_8h_ac8b9c4ac6175adcb1edac9f8b0d12e89}} 
+\index{MyString.h@{MyString.h}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!MyString.h@{MyString.h}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_string_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{BOOL}} Is\+Empty (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_my_string_8h_ae5bcae6496345535e5844ccd6919f653}{String}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+check if the String is empty (NULL) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to check if is empty\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE (1) if the String is empty, else return FALSE (0) 
+\end{DoxyReturn}

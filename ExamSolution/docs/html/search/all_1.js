@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['header_2eh_1',['Header.h',['../_header_8h.html',1,'']]]
+  ['bool_2',['BOOL',['../_my_string_8h.html#ae4cc35dcc70810fa972cc8a5185a28fa',1,'MyString.h']]]
 ];

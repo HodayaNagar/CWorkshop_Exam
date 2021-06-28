@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['function_3',['function',['../_header_8h.html#a58e9438bbb1860688de13a6b4118d197',1,'Header.h']]]
+  ['appendcstring_20',['AppendCString',['../_my_string_8h.html#afcf30ce86331792c0ca19d5273fcb05b',1,'MyString.h']]],
+  ['appendstring_21',['AppendString',['../_my_string_8h.html#a2e16056c6206823c6093a4f863a7cae2',1,'MyString.h']]]
 ];
